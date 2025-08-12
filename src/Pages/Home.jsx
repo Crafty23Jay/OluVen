@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 import "./Home.css";
 import loaderGif from "../assets/loader.gif";
 import { FaLeaf, FaSoap, FaHandHoldingWater } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -42,14 +43,16 @@ export default function Home() {
               Welcome to Olu Ventures <br />Nigeria Limited
 
             </motion.h1 >
-            <p >Pure, handmade soaps for a healthier, happier skin.</p>
+            <p >Everything We Do is for You...</p>
+            <Link to='/about-us'>
             <motion.button
               className="cta-btn"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Shop Now
+              Know More
             </motion.button>
+            </Link>
           </div>
         </section>
 
