@@ -25,12 +25,12 @@
   background: url("/src/assets/images/homebg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #2929299c;
+  background-color: #141313b9;
   background-blend-mode: multiply;
   
   position: relative;
-
   animation: bgMove 15s ease-in-out infinite;
+  background-size: 120% 120%;
 }
 
 @keyframes bgMove {
@@ -45,6 +45,8 @@
   50%  { background-position: 52% 54%; }
   100% { background-position: 50% 50%; }
 } */
+
+
 .hero-overlay {
   color: #fff;
   height: fit-content;
@@ -68,9 +70,29 @@
   margin-bottom: 25px;
 }
 
+
+.olu-txt{
+  padding: 0 0.5rem;
+  background: linear-gradient(270deg, rgb(115, 41, 233), rgb(188, 151, 248), rgba(105, 102, 255, 0.692));
+  background-size: 400% 400%;
+  
+  animation: gradientMove 12s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.n-l{
+  margin-top: 1rem !important;
+  color: #fea500;
+}
+
 .cta-btn {
-  background: #fea500;
-  border: none;
+  background: transparent;
+  border: 2px solid #fea500;
   padding: 12px 32px;
   color: white;
   font-size: 1rem;
@@ -80,8 +102,8 @@
 }
 
 .cta-btn:hover {
-  background: transparent;
-  border: 2px solid #fea500;
+  background: #fea500;
+  border: none;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 

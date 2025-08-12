@@ -40,7 +40,8 @@ export default function Home() {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              Welcome to Olu Ventures <br />Nigeria Limited
+              Welcome to <span className="olu-txt">Olu Ventures</span> <br/> 
+              <span className="n-l">Nigeria Limited</span>
 
             </motion.h1 >
             <p >Everything We Do is for You...</p>
