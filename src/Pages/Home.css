@@ -174,3 +174,10 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
+
+@media (max-width: 800px) {
+.hero-section {
+  background-size: 200% 100%;
+ }
+}
