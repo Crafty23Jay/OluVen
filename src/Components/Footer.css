@@ -44,6 +44,12 @@
   color: inherit;
   text-decoration: none;
 }
+.links a:hover {
+  color: inherit;
+  text-decoration: none;
+  color: #fda500;
+  cursor: pointer;
+}
 
 .socials{
     margin-top: 2rem;
@@ -60,7 +66,7 @@
 }
 
 .socials a:hover {
-  background: rgba(0, 0, 0, 0.04);
+  background: rgba(255, 255, 255, 0.562);
 }
 
 .copyright {
@@ -83,7 +89,7 @@
     margin: auto;
   }
   .footer-p{
-    width: 70vw;
+    width: 90vw;
     font-size: 0.9rem;
     text-align: center;
     /* margin: auto; */

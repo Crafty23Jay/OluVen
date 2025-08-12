@@ -24,8 +24,9 @@
   justify-content: center;
   background-image: url("../assets/images/homebg.jpg") center/cover no-repeat;
   background-size: cover;
-  background-color: #5f5f5f;
   background-blend-mode: multiply;
+  background-color: #5f5f5f;
+  
   position: relative;
 
 }

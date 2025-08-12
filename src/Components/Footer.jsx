@@ -21,10 +21,10 @@ export default function Footer() {
 
         <div className="links" aria-label="Footer navigation">
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/products">Products</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/about-us">About</Link>
+          <Link to="/our-products">Products</Link>
+          <Link to="/our-services">Services</Link>
+          <Link to="/contact-us">Contact</Link>
         </div>
 
         <div className="socials" aria-label="Social links">
@@ -36,6 +36,12 @@ export default function Footer() {
           </a>
           <a href="#" aria-label="twitter">
             <FiTwitter />
+          </a>
+          <a href="#" aria-label="twitter">
+            <FiInstagram />
+          </a>
+          <a href="#" aria-label="twitter">
+            <FiFacebook />
           </a>
         </div>
       </div>
