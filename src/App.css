@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: Montserrat;
+  background-color: #f9f9f9;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* .page-content {
+  flex: 1;
+  padding: 20px;
+} */

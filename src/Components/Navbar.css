@@ -1,0 +1,253 @@
+/* .navbar {
+  background: #ffffff;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 24px;
+}
+
+.navbar-logo {
+  color: #2c3e50;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.navbar-logo span {
+  color: #16a085;
+}
+
+.menu-icon {
+  display: none;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-item {
+  height: 80px;
+}
+
+.nav-links {
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 16px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.nav-links:hover {
+  background-color: #16a085;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.nav-icon {
+  margin-right: 8px;
+}
+
+.nav-menu.active {
+  background: #fff;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.nav-menu.active .nav-links {
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 960px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background: #fff;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+} */
+
+
+
+
+/* Nav one */
+
+/* Navbar.css - readable top-to-bottom format */
+
+.Navbar {
+  background: linear-gradient(
+    90deg,
+    rgb(115, 41, 233),
+    rgb(188, 151, 248),
+    rgba(105, 102, 255, 0.692)
+  );
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.171);
+  position: sticky;
+  top: 0;
+  z-index: 60;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* brand */
+.brand {
+  font-weight: 700;
+  color: var(--dark, #fea500);
+  font-size: 1.55rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 2.5rem;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.brand-name{
+  font-size: 1.33rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* hamburger - hidden on desktop */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* nav links - horizontal on desktop */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 0.1rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  color: white;
+  text-wrap: nowrap;
+}
+
+.nav-links li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  color: inherit;
+  text-decoration: none;
+  transition: background 0.18s ease, transform 0.12s ease, color 0.12s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+  background: #fea500;
+  transition: 0.5s ease;
+  transform: translateY(-3px);
+  color: black;
+}
+
+/* icon spacing */
+.nav-links li a svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width: 1000px) {
+  .brand-name{
+    display: none;
+  }
+  .nav-links {
+    color: black;
+  }
+}
+
+/* mobile styles */
+@media (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    padding: 1rem;
+    width: 260px;
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+    box-shadow: -6px 8px 30px rgba(0, 0, 0, 0.12);
+    border-left: 1px solid rgba(0, 0, 0, 0.04);
+    height: calc(100% - 64px);
+    overflow-y: auto;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    width: 100%;
+    padding: 0.9rem 0.6rem;
+  }
+}

@@ -1,0 +1,98 @@
+.products-page {
+  font-family: Montserrat;
+  color: #333;
+}
+
+/* Loader */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff;
+}
+
+.loader-gif {
+  width: 55px;
+}
+
+/* Hero Section */
+.products-hero {
+  height: 60vh;
+  background: url("../assets/images/homebg.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.products-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.products-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.products-overlay p {
+  font-size: 1.2rem;
+}
+
+/* Products Grid */
+.products-grid {
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  background: #f9f9f9;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.product-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.product-info p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1e90ff;
+}

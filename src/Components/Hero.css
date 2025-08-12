@@ -1,0 +1,53 @@
+/* Hero.css */
+
+.Hero {
+  padding: 4rem 1rem;
+  background: linear-gradient(180deg, #fff 0%, #fcfcff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48vh;
+  animation: bgMove 8s ease-in-out infinite;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  text-align: center;
+}
+
+.Hero h1 {
+  font-size: 2.1rem;
+  margin: 0 0 0.6rem;
+  color: var(--dark, #222);
+}
+
+.Hero p {
+  color: var(--muted, #666);
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.hero-cta {
+  background: var(--brand, #6aa84f);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.12s ease, box-shadow 0.18s ease;
+}
+
+.hero-cta:hover,
+.hero-cta:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+@keyframes bgMove {
+  0%   { background-position: 50% 50%; }
+  50%  { background-position: 52% 54%; }
+  100% { background-position: 50% 50%; }
+}
