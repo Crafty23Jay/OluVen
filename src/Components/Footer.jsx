@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FiInstagram, FiFacebook, FiTwitter } from "react-icons/fi";
+import { FaGoogle, FaTiktok, FaYoutube } from "react-icons/fa";
 import "./Footer.css";
 
 export default function Footer() {
@@ -34,14 +35,17 @@ export default function Footer() {
           <a href="#" aria-label="facebook">
             <FiFacebook />
           </a>
-          <a href="#" aria-label="twitter">
+          <a href="#" aria-label="facebook">
             <FiTwitter />
           </a>
-          <a href="#" aria-label="twitter">
-            <FiInstagram />
+          <a href="#" aria-label="google">
+            <FaGoogle />
           </a>
-          <a href="#" aria-label="twitter">
-            <FiFacebook />
+          <a href="#" aria-label="tiktok">
+            <FaTiktok />
+          </a>
+          <a href="#" aria-label="youtube">
+            <FaYoutube />
           </a>
         </div>
       </div>

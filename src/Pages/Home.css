@@ -22,15 +22,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../assets/images/homebg.jpg") center/cover no-repeat;
+  background: url("/src/assets/images/homebg.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #2929299c;
   background-blend-mode: multiply;
-  background-color: #5f5f5f;
   
   position: relative;
 
+  animation: bgMove 15s ease-in-out infinite;
 }
 
+@keyframes bgMove {
+  0%   { background-position: 50% 50%; }
+  50%  { background-position: 60% 55%; }
+  100% { background-position: 50% 50%; }
+}
+
+
+/* @keyframes bgMove {
+  0%   { background-position: 50% 50%; }
+  50%  { background-position: 52% 54%; }
+  100% { background-position: 50% 50%; }
+} */
 .hero-overlay {
   color: #fff;
   height: fit-content;
