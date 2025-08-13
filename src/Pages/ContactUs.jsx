@@ -62,6 +62,10 @@ export default function ContactUs() {
               <p>info@soapbusiness.com</p>
             </div>
             <div className="info-box">
+              <FaEnvelope className="info-icon" />
+              <p>info@soapbusiness.com</p>
+            </div>
+            <div className="info-box">
               <FaPhone className="info-icon" />
               <p>+123 456 7890</p>
             </div>
@@ -79,6 +83,20 @@ export default function ContactUs() {
             <button type="submit">Send Message</button>
           </motion.form>
         </section>
+
+        {/* <div style="width: 100vw; height: 400px; border: 0; border-radius: 10px; overflow: hidden; border: 1px solid red">
+          <iframe
+            width="100%"
+            height="100%"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=6.5244,3.3792&hl=es;z=14&output=embed">
+          </iframe>
+        </div> */}
+
+
       </motion.div>
       {/* <Footer /> */}
     </>

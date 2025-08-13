@@ -66,17 +66,19 @@
   align-items: center;
   gap: 15px;
   background: #fff;
-  padding: 15px;
+  padding: 10px 12px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left: 2px solid #fda500;
 }
 .info-box:hover {
   background: #fda500;
   cursor: pointer;
+  border-left: 2px solid white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.158);
   transition: background 1s ease, box-shadow 1s ease;
   .info-icon{
-    color: black;
+    color: white;
   }
 }
 
