@@ -10,14 +10,14 @@ import { MdImportExport } from "react-icons/md";
 import { TbTournament } from "react-icons/tb";
 import { MdOutlineModelTraining } from "react-icons/md";
 
-import img1 from "../assets/images/Machine1.jpg";
-import img2 from "../assets/images/Machine2.jpg";
-import img3 from "../assets/images/Machine3.jpg";
-import img4 from "../assets/images/Machine4.jpg";
-import img5 from "../assets/images/Machine5.jpg";
-import img6 from "../assets/images/Machine6.jpg";
-import img7 from "../assets/images/Machine7.jpg";
-import img8 from "../assets/images/Machine8.jpg";
+import img1 from "../assets/images/machine1.jpg";
+import img2 from "../assets/images/machine2.jpg";
+import img3 from "../assets/images/machine3.jpg";
+import img4 from "../assets/images/machine4.jpg";
+import img5 from "../assets/images/machine5.jpg";
+import img6 from "../assets/images/machine6.jpg";
+import img7 from "../assets/images/machine7.jpg";
+import img8 from "../assets/images/machine8.jpg";
 
 export default function OurServices() {
   const [loading, setLoading] = useState(true);
