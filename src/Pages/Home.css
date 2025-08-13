@@ -185,3 +185,12 @@
   background-size: 200% 100%;
  }
 }
+@media (max-width: 500px) {
+  .hero-section {
+    height: 90vh;
+  }
+  .n-l{
+    font-size: 1.8rem;
+    /* color: white; */
+  }
+}

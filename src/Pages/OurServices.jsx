@@ -4,7 +4,20 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import "./OurServices.css";
 import loaderGif from "../assets/loader.gif";
-import { FaLeaf, FaSpa, FaSoap, FaHandsHelping } from "react-icons/fa";
+
+import { FaSoap } from "react-icons/fa6";
+import { MdImportExport } from "react-icons/md";
+import { TbTournament } from "react-icons/tb";
+import { MdOutlineModelTraining } from "react-icons/md";
+
+import img1 from "../assets/images/Machine1.jpg";
+import img2 from "../assets/images/Machine2.jpg";
+import img3 from "../assets/images/Machine3.jpg";
+import img4 from "../assets/images/Machine4.jpg";
+import img5 from "../assets/images/Machine5.jpg";
+import img6 from "../assets/images/Machine6.jpg";
+import img7 from "../assets/images/Machine7.jpg";
+import img8 from "../assets/images/Machine8.jpg";
 
 export default function OurServices() {
   const [loading, setLoading] = useState(true);
@@ -25,27 +38,27 @@ export default function OurServices() {
   const services = [
     {
       id: 1,
-      title: "Custom Soap Orders",
-      desc: "Get handmade soaps tailored to your preferred scent, shape, and skin type.",
+      title: "Soap Production:",
+      desc: " We proud ourselves for the production of the most cost-effective range of soaps; bathing soaps, laundry soaps and multipurpose soaps. We make the best quality soap.",
       icon: <FaSoap />
     },
     {
       id: 2,
-      title: "Spa & Wellness Supplies",
-      desc: "Providing natural soaps for spas, hotels, and wellness centers.",
-      icon: <FaSpa />
+      title: "Importation:",
+      desc: "Importation of various production machineries, e.g. Soap Production, Sealing Machine, Packaging Machine, Bottling Machine, Wrapping Machine etc",
+      icon: <MdImportExport />
     },
     {
       id: 3,
-      title: "Eco-Friendly Packaging",
-      desc: "All products are packaged using biodegradable and eco-conscious materials.",
-      icon: <FaLeaf />
+      title: "Tourism:",
+      desc: "Providing an easy, smooth and hitch-free travel arrangements to China and its environs, either for business or leisure. You will be placed in good hands and a good hospitality is guanranteed.",
+      icon: <TbTournament />
     },
     {
       id: 4,
       title: "Workshops & Training",
-      desc: "Hands-on training sessions for those who want to learn soap-making.",
-      icon: <FaHandsHelping />
+      desc: "We offer hands-on training sessions to help you confidently learn and master the art of soap-making. Each workshop is packed with tips, techniques, and creative inspiration.",
+      icon: <MdOutlineModelTraining />
     }
   ];
 
@@ -87,6 +100,38 @@ export default function OurServices() {
               <p>{service.desc}</p>
             </motion.div>
           ))}
+        </section>
+
+
+        <section className="prod-sec">
+          <main className="prod-cont">
+            <div className="image-img">
+              <img className="p-img" src={img1} alt="Production Img" />
+            </div>
+            <div className="image-img">
+              <img className="p-img" src={img2} alt="Production Img" />
+            </div>
+            <div className="image-img">
+              <img className="p-img" src={img3} alt="Production Img" />
+            </div>
+
+            <div className="image-img">
+              <img className="p-img" src={img4} alt="Production Img" />
+            </div>
+            <div className="image-img">
+              <img className="p-img" src={img5} alt="Production Img" />
+            </div>
+            <div className="image-img">
+              <img className="p-img" src={img6} alt="Production Img" />
+            </div>
+
+            <div className="image-img">
+              <img className="p-img" src={img7} alt="Production Img" />
+            </div>
+            <div className="image-img">
+              <img className="p-img" src={img8} alt="Production Img" />
+            </div>
+          </main>
         </section>
       </motion.div>
       {/* <Footer /> */}
