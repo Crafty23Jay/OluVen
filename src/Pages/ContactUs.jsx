@@ -4,7 +4,12 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import "./ContactUs.css";
 import loaderGif from "../assets/loader.gif";
-import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
+// import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaMapLocationDot } from "react-icons/fa6";
+import { IoIosMailUnread } from "react-icons/io";
+import { BiSolidContact } from "react-icons/bi";
+import { RiTimerFlashFill } from "react-icons/ri";
+
 
 export default function ContactUs() {
   const [loading, setLoading] = useState(true);
@@ -54,20 +59,20 @@ export default function ContactUs() {
             transition={{ duration: 0.8 }}
           >
             <div className="info-box">
-              <FaMapMarkerAlt className="info-icon" />
-              <p>123 Soap Street, Clean City, Earth</p>
+              <FaMapLocationDot className="info-icon" />
+              <p>No, 5 Unity Estate Road Lafenwa-Ayetoro Road, Abeokuta Ogun State.</p>
             </div>
             <div className="info-box">
-              <FaEnvelope className="info-icon" />
-              <p>info@soapbusiness.com</p>
+              <IoIosMailUnread className="info-icon" />
+              <p>oluventuresltd@yahoo.com</p>
             </div>
             <div className="info-box">
-              <FaEnvelope className="info-icon" />
-              <p>info@soapbusiness.com</p>
+              <BiSolidContact className="info-icon" />
+              <p>+234(0)813-192-4356 , +234(0)706-129-5923</p>
             </div>
             <div className="info-box">
-              <FaPhone className="info-icon" />
-              <p>+123 456 7890</p>
+              <RiTimerFlashFill className="info-icon" />
+              <p>Mon - Sat: 08:00 Am - 07:00 Pm</p>
             </div>
           </motion.div>
 
@@ -77,15 +82,30 @@ export default function ContactUs() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <div className="input-row-cont">
+              <div className="input-row">
+                <input type="text" placeholder="First Name" required />
+                <input type="text" placeholder="Last Name" required />
+              </div>
+              <div className="input-row">
+                <input type="email" placeholder="E-mail" required />
+                <input type="text" placeholder="Subject" required />
+              </div>
+            </div>
+            <textarea placeholder="Your Message" rows="8" required></textarea>
             <button type="submit">Send Message</button>
           </motion.form>
         </section>
 
-        {/* <div style="width: 100vw; height: 400px; border: 0; border-radius: 10px; overflow: hidden; border: 1px solid red">
-          <iframe
+        <main className="facty-sec">
+          <div className="facty-img"></div>
+        </main>
+
+
+
+        <div className="map-cont">
+          Map
+          {/* <iframe
             width="100%"
             height="100%"
             style="border:0"
@@ -93,8 +113,8 @@ export default function ContactUs() {
             allowfullscreen
             referrerpolicy="no-referrer-when-downgrade"
             src="https://www.google.com/maps?q=6.5244,3.3792&hl=es;z=14&output=embed">
-          </iframe>
-        </div> */}
+          </iframe> */}
+        </div>
 
 
       </motion.div>
