@@ -20,7 +20,20 @@
 .products-hero {
   height: 60vh;
   background: url("../assets/images/homebg.jpg") center/cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #14131348;
+  background-blend-mode: multiply;
+  
   position: relative;
+  animation: bgMove 15s ease-in-out infinite;
+  background-size: 120% 110%;
+}
+
+@keyframes bgMove {
+  0%   { background-position: 50% 50%; }
+  50%  { background-position: 60% 55%; }
+  100% { background-position: 50% 50%; }
 }
 
 .products-overlay {
@@ -35,8 +48,24 @@
 }
 
 .products-overlay h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+font-size: 2.5rem;
+  margin-bottom: 8px;
+  letter-spacing: 0.2rem;
+  padding: 0 1rem;
+  background: linear-gradient(270deg, rgb(115, 41, 233), rgb(188, 151, 248), rgba(105, 102, 255, 0.692));
+  background-size: 400% 400%;
+  
+  /* -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; */
+
+  animation: gradientMove 8s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .products-overlay p {
@@ -95,4 +124,19 @@
   font-size: 1.1rem;
   font-weight: bold;
   color: #1e90ff;
+}
+
+
+@media (max-width: 734px) {
+  .products-hero {
+    background-size: 130% 100%;
+  }
+  .products-overlay h1 {
+  font-size: 2.2rem;
+  width: fit-content;
+  letter-spacing: 0;
+  }
+  .products-overlay p {
+    width: 85%;
+  }
 }

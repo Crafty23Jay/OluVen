@@ -9,6 +9,7 @@ import { FaMapLocationDot } from "react-icons/fa6";
 import { IoIosMailUnread } from "react-icons/io";
 import { BiSolidContact } from "react-icons/bi";
 import { RiTimerFlashFill } from "react-icons/ri";
+import MapComponent from "../Components/MapComponent";
 
 
 export default function ContactUs() {
@@ -39,7 +40,7 @@ export default function ContactUs() {
         {/* Hero */}
         <section className="contact-hero">
           <div className="contact-overlay">
-            <motion.h1
+            <motion.h1 
               initial={{ y: 40, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 }}
@@ -104,7 +105,8 @@ export default function ContactUs() {
 
 
         <div className="map-cont">
-          Map
+          {/* <MapComponent /> */}
+
           {/* <iframe
             width="100%"
             height="100%"
@@ -114,6 +116,9 @@ export default function ContactUs() {
             referrerpolicy="no-referrer-when-downgrade"
             src="https://www.google.com/maps?q=6.5244,3.3792&hl=es;z=14&output=embed">
           </iframe> */}
+
+            
+
         </div>
 
 
