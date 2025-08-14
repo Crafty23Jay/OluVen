@@ -4,8 +4,14 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import "./Home.css";
 import loaderGif from "../assets/loader.gif";
-import { FaLeaf, FaSoap, FaHandHoldingWater } from "react-icons/fa";
+import { FaHandHoldingWater } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
+import { FaSoap } from "react-icons/fa6";
+import { MdImportExport } from "react-icons/md";
+import { IoAnalyticsOutline } from "react-icons/io5";
+import { TbTruckDelivery } from "react-icons/tb";
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -64,12 +70,12 @@ export default function Home() {
             whileHover={{ y: -5 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
-            <FaLeaf className="feature-icon" />
-            <h3>Natural Ingredients</h3>
-            <p>
+            <FaSoap className="feature-icon" />
+            <h3>SOAP PRODUCTION</h3>
+            {/* <p>
               We use only the finest organic and natural ingredients to create
               our soaps.
-            </p>
+            </p> */}
           </motion.div>
 
           <motion.div
@@ -77,12 +83,12 @@ export default function Home() {
             whileHover={{ y: -5 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
-            <FaSoap className="feature-icon" />
-            <h3>Handmade Quality</h3>
-            <p>
+            <MdImportExport className="feature-icon" />
+            <h3>IMPORTATION</h3>
+            {/* <p>
               Each soap is handcrafted with care, ensuring consistent quality
               every time.
-            </p>
+            </p> */}
           </motion.div>
 
           <motion.div
@@ -90,13 +96,31 @@ export default function Home() {
             whileHover={{ y: -5 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
-            <FaHandHoldingWater className="feature-icon" />
-            <h3>Gentle on Skin</h3>
-            <p>
+            <IoAnalyticsOutline className="feature-icon" />
+            <h3>SOURCING</h3>
+            {/* <p>
               Our soaps are gentle, nourishing, and perfect for all skin types.
-            </p>
+            </p> */}
           </motion.div>
+          
+          <motion.div
+            className="feature-card"
+            whileHover={{ y: -5 }}
+            transition={{ type: "spring", stiffness: 200 }}
+          >
+            <TbTruckDelivery className="feature-icon" />
+            <h3>CHEAP DELIVERY</h3>
+            {/* <p>
+              Our soaps are gentle, nourishing, and perfect for all skin types.
+            </p> */}
+          </motion.div>
+
         </section>
+
+          {/* <WavyHexBox />
+          <WavyHexBox />
+          <WavyHexBox />
+          <WavyHexBox /> */}
       </motion.div>
       {/* <Footer /> */}
     </>
