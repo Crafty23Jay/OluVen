@@ -160,6 +160,100 @@
 
 
 
+.sec1-cont{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+/* .sec1-cont{
+  width: 90%;
+  height: max-content;
+  border: 1px solid red;
+  margin: 0 auto;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+} */
+
+
+.left{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.left h3, .partners-sec h3{
+  font-size: 1.3rem;
+  color: #FEA500;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.left p{
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #797986;
+}
+.view-btn{
+  width: fit-content;
+  border: 2px solid #fea500;
+  background: transparent;
+  color: #141313;
+  padding: 0.7rem 4.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+.view-btn:hover{
+  transition: background-color 0.8s ease;
+  border: 2px solid #fea500;
+  background: #FEA500;
+  color: white;
+  
+}
+
+
+.right{
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 10/6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.right-img{
+  width: 100%;
+  height: auto;
+  background: url("/src/assets/images/stab1.png");
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+.partners-sec{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+.partners-sec>h3{
+  padding: 0 3rem;
+}
+
+
+
+
 
 #typewriter {
   font-family: monospace;
@@ -192,11 +286,40 @@
 }
 
 
+@media (max-width: 1000px) {
+  .left p{
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .partners-sec>h3{
+  padding: 0 1.8rem;
+ }
+}
+
+
 @media (max-width: 800px) {
 .hero-section {
   background-size: 200% 100%;
  }
 }
+
+@media (max-width: 698px) {
+  .sec1-cont{
+    gap: 2.5rem;
+  }
+  .left{
+    /* padding-left: 1rem; */
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.103);
+    text-align: center;
+  }
+  .view-btn{
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+
 @media (max-width: 500px) {
   .hero-section {
     height: 90vh;

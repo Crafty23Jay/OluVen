@@ -12,6 +12,9 @@ import { MdImportExport } from "react-icons/md";
 import { IoAnalyticsOutline } from "react-icons/io5";
 import { TbTruckDelivery } from "react-icons/tb";
 
+import stab1 from "../assets/images/stab1.png";
+import featureslid1 from "../assets/images/featureslid1.jpg";
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -117,10 +120,39 @@ export default function Home() {
 
         </section>
 
-          {/* <WavyHexBox />
-          <WavyHexBox />
-          <WavyHexBox />
-          <WavyHexBox /> */}
+        <main className="sec1-cont">
+          <div className="left">
+            <h3>ALL NATURAL BODY CARE PRODUCTS</h3>
+            <p>Our mission is to be a leading soap manufacturer, using at least 85% raw 
+              materials locally generated with the aim of producing high quality soaps at 
+              reasonable price for the benefit of our customers.
+            </p>
+            <button className="view-btn">View Details</button>
+          </div>
+
+          <div className="right">
+            <img src={stab1} className="right-img" alt="" />
+          </div>
+        </main>
+
+        <section className="partners-sec">
+          <h3>WHO ARE OUR PARTNERS?</h3>
+
+          <main className="sec1-cont">
+            <div className="right">
+              <img src={featureslid1} className="right-img" alt="" />
+            </div>
+
+            <div className="left">
+              <p>
+                We have mutual partnerships with various chinese nationals and that keeps 
+                us at the forefront of soap production in Nigeria by being dynamic in 
+                production processes.
+              </p>
+            </div>
+          </main>
+        </section>
+
       </motion.div>
       {/* <Footer /> */}
     </>
