@@ -158,7 +158,7 @@ export default function Home() {
         <section className="partners-sec">
           <h3>PRODUCT FEATURES</h3>
           <main className="sec1-cont">
-            <div className="left">
+            <div className="left" id="feat-sec">
 
               <div className="left-cont">
                 <div className="icon-cont">
