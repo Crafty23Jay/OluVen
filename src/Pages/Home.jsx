@@ -201,7 +201,7 @@ export default function Home() {
         </section>
 
       </motion.div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

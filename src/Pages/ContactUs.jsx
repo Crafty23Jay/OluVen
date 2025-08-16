@@ -123,7 +123,7 @@ export default function ContactUs() {
 
 
       </motion.div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

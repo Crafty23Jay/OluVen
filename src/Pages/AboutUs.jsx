@@ -88,7 +88,7 @@ export default function AboutUs() {
           </motion.div>
         </section>
       </motion.div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
