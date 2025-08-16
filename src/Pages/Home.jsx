@@ -4,7 +4,6 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import "./Home.css";
 import loaderGif from "../assets/loader.gif";
-import { FaHandHoldingWater } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 import { FaSoap } from "react-icons/fa6";
@@ -14,6 +13,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 
 import stab1 from "../assets/images/stab1.png";
 import featureslid1 from "../assets/images/featureslid1.jpg";
+import abright from "../assets/images/abright.png";
 
 
 export default function Home() {
@@ -127,7 +127,9 @@ export default function Home() {
               materials locally generated with the aim of producing high quality soaps at 
               reasonable price for the benefit of our customers.
             </p>
+            <Link to="/our-products">
             <button className="view-btn">View Details</button>
+            </Link>
           </div>
 
           <div className="right">
@@ -149,6 +151,47 @@ export default function Home() {
                 us at the forefront of soap production in Nigeria by being dynamic in 
                 production processes.
               </p>
+            </div>
+          </main>
+        </section>
+
+        <section className="partners-sec">
+          <h3>PRODUCT FEATURES</h3>
+          <main className="sec1-cont">
+            <div className="left">
+
+              <div className="left-cont">
+                <div className="icon-cont">
+                  <FaSoap className="feat-icon"/>
+                </div>
+                <div className="cont-cont">
+                  <h4>BEAUTIFULLY PACKED</h4>
+                  <p>Enjoy colorful and nice packagings that are perfect for gifts and occasions</p>
+                </div>
+              </div>
+
+              <div className="left-cont">
+                <div className="icon-cont">
+                  <FaSoap className="feat-icon"/>
+                </div>
+                <div className="cont-cont">
+                  <h4>HYPOALLERGENIC</h4>
+                  <p>Only fresh, pure and organic materials are used to help you avoid allergy or side effect.</p>
+                </div>
+              </div>
+              <div className="left-cont">
+                <div className="icon-cont">
+                  <FaSoap className="feat-icon"/>
+                </div>
+                <div className="cont-cont">
+                  <h4>BONUS PROGRAM</h4>
+                  <p>Our regular customers receives pleasant bonuses upon further purchases.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="features-cont">
+              <img className="features-img"  src={abright} alt="Factory-Machine-img" />
             </div>
           </main>
         </section>
