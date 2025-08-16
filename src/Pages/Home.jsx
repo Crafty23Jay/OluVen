@@ -15,6 +15,10 @@ import stab1 from "../assets/images/stab1.png";
 import featureslid1 from "../assets/images/featureslid1.jpg";
 import abright from "../assets/images/abright.png";
 
+import { SiCodefresh } from "react-icons/si";
+import { HiMiniSquaresPlus } from "react-icons/hi2";
+import { PiSealCheckFill } from "react-icons/pi";
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -137,7 +141,7 @@ export default function Home() {
           </div>
         </main>
 
-        <section className="partners-sec">
+        <section className="partners-sec" id="home-sec2">
           <h3>WHO ARE OUR PARTNERS?</h3>
 
           <main className="sec1-cont">
@@ -156,13 +160,13 @@ export default function Home() {
         </section>
 
         <section className="partners-sec">
-          <h3>PRODUCT FEATURES</h3>
+          <h3>PRODUCT FEATURES:</h3>
           <main className="sec1-cont">
             <div className="left" id="feat-sec">
 
               <div className="left-cont">
                 <div className="icon-cont">
-                  <FaSoap className="feat-icon"/>
+                  <PiSealCheckFill className="feat-icon"/>
                 </div>
                 <div className="cont-cont">
                   <h4>BEAUTIFULLY PACKED</h4>
@@ -172,7 +176,7 @@ export default function Home() {
 
               <div className="left-cont">
                 <div className="icon-cont">
-                  <FaSoap className="feat-icon"/>
+                  <SiCodefresh className="feat-icon"/>
                 </div>
                 <div className="cont-cont">
                   <h4>HYPOALLERGENIC</h4>
@@ -181,7 +185,7 @@ export default function Home() {
               </div>
               <div className="left-cont">
                 <div className="icon-cont">
-                  <FaSoap className="feat-icon"/>
+                  <HiMiniSquaresPlus className="feat-icon"/>
                 </div>
                 <div className="cont-cont">
                   <h4>BONUS PROGRAM</h4>

@@ -190,10 +190,12 @@
   /* border: 1px solid red; */
 }
 .left h3, .partners-sec h3{
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #FEA500;
   margin-bottom: 0.5rem;
-  font-weight: 400;
+  font-family: "Passion One", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.15rem;
 }
 .left p{
   font-size: 1.2rem;
@@ -254,14 +256,6 @@
 }
 
 
-
-#feat-sec{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
 .Left-cont{
   width: 100%;
   height: fit-content;
@@ -296,7 +290,8 @@
   padding: 0;
   font-size: 1.2rem;
   color: #fea500;
-  font-weight: 500;
+  font-family: "Varela Round";
+  font-weight: 600;
 }
 .cont-cont p {
   margin: 0;
@@ -323,7 +318,17 @@
 }
 
 
+#home-sec2{
+  margin: 5rem 0;
+}
 
+#feat-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
 
 #typewriter {
   font-family: monospace;
@@ -420,8 +425,8 @@
     padding: 1rem;
   }
   .features-cont{
-    width: 70%;
-  aspect-ratio: 12/15;
+    width: 80%;
+    aspect-ratio: 10/15;
   }
 }
 
