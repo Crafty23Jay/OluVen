@@ -81,7 +81,10 @@ export default function OurServices() {
             >
               Our Services
             </motion.h1>
-            <p>Quality care and personalized soap solutions</p>
+            <p>
+              Explore our range of expertly crafted soaps, each designed to provide 
+              quality care and personalized solutions for every skin type.
+            </p>
           </div>
         </section>
 

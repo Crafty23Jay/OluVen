@@ -47,7 +47,10 @@ export default function ContactUs() {
             >
               Contact Us
             </motion.h1>
-            <p>We’d love to hear from you</p>
+            <p>
+              We’d love to hear from you—reach out with your questions, feedback, or orders, and 
+              our team will be glad to assist.
+            </p>
           </div>
         </section>
 

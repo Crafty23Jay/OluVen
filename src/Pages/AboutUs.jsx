@@ -41,7 +41,8 @@ export default function AboutUs() {
             >
               About Us
             </motion.h1>
-            <p>Crafting natural soaps for a better tomorrow</p>
+            <p>Discover the inspiring story behind our soaps, the passion that drives 
+              us, and our commitment to quality and sustainability.</p>
           </div>
         </section>
 
@@ -55,17 +56,19 @@ export default function AboutUs() {
           >
             <h2>Our Story</h2>
             <p>
-              At Olu Ventures, we believe in the power of nature. Our journey
-              began with a passion for crafting soaps that are pure, gentle, and
-              environmentally friendly. Every bar we create is a result of
-              careful selection of ingredients, ensuring your skin receives the
-              best care.
+              At Olu Ventures, we believe true skincare starts with nature. What 
+              began as a passion for making gentle soaps has grown into a mission 
+              to provide families with safe, eco-friendly alternatives for everyday care.
             </p>
             <p>
-              We are committed to sustainability, using eco-friendly packaging
-              and supporting local suppliers. With each purchase, you’re not
-              only caring for your skin but also contributing to a greener
-              planet.
+              Each bar is handcrafted with natural oils, herbs, and vitamins—like aloe 
+              vera, turmeric, and shea butter—chosen to keep your skin healthy and radiant.
+               We also support local farmers and use biodegradable packaging, ensuring our 
+               products are as kind to the planet as they are to your skin.
+            </p>
+            <p>
+              With every purchase, you join us in creating a world where self-care, 
+              community, and sustainability go hand in hand.
             </p>
           </motion.div>
 

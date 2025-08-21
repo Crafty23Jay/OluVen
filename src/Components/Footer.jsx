@@ -11,9 +11,10 @@ export default function Footer() {
         <div className="brand">
             <div>OluVentures Nig Ltd <br />
             <p className="footer-p">
-                Our mission is to be a leading soap manufacturer using at least 85% raw 
-                materials locally generated with the aim of producing high quality 
-                soaps at reasonable price for the benefit of our customers.
+                Our mission is to be a trusted leader in soap manufacturing, committed 
+                to sourcing at least 85% of our raw materials locally. By supporting 
+                local suppliers and communities, we ensure that every bar of soap reflects 
+                quality, sustainability, and authenticity.
             </p>
             </div>
             

@@ -57,7 +57,9 @@ export default function Home() {
               <span className="n-l">Nigeria Limited</span>
 
             </motion.h1 >
-            <p >Everything We Do is for You...</p>
+            <p>"Handcrafted soaps made from organic ingredients, designed to refresh, 
+                protect, and care for every skin type."
+            </p>
             <Link to='/about-us'>
             <motion.button
               className="cta-btn"
@@ -127,9 +129,13 @@ export default function Home() {
         <main className="sec1-cont">
           <div className="left">
             <h3>ALL NATURAL BODY CARE PRODUCTS</h3>
-            <p>Our mission is to be a leading soap manufacturer, using at least 85% raw 
-              materials locally generated with the aim of producing high quality soaps at 
-              reasonable price for the benefit of our customers.
+            <p>
+              Our mission is to be a trusted leader in soap manufacturing, committed 
+              to sourcing at least 85% of our raw materials locally. By supporting 
+              local suppliers and communities, we ensure that every bar of soap reflects
+               quality, sustainability, and authenticity. <br /> We are dedicated to producing 
+               high-quality soaps at fair and reasonable prices, making healthy skincare 
+               accessible to all while promoting local growth and environmental responsibility
             </p>
             <Link to="/our-products">
             <button className="view-btn">View Details</button>
@@ -151,9 +157,13 @@ export default function Home() {
 
             <div className="left">
               <p>
-                We have mutual partnerships with various chinese nationals and that keeps 
-                us at the forefront of soap production in Nigeria by being dynamic in 
-                production processes.
+                We have established strong partnerships with various Chinese nationals, and 
+                these collaborations play a vital role in keeping us at the forefront of soap 
+                production in Nigeria. By combining local expertise with international knowledge 
+                and technology, we are able to adopt dynamic production processes, improve 
+                efficiency, and continuously raise the standard of our products. This synergy 
+                allows us to innovate, remain competitive, and deliver high-quality soaps that 
+                meet the needs of our customers while aligning with global best practices.
               </p>
             </div>
           </main>

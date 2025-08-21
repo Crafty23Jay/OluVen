@@ -94,7 +94,10 @@ export default function OurProducts() {
             >
               Our Products
             </motion.h1>
-            <p>Handcrafted soaps made with love</p>
+            <p>
+              Experience the care in every bar—handcrafted soaps made with love, 
+              using natural ingredients to nourish your skin daily.
+            </p>
           </div>
         </section>
 
