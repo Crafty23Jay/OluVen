@@ -12,7 +12,7 @@ import { IoAnalyticsOutline } from "react-icons/io5";
 import { TbTruckDelivery } from "react-icons/tb";
 
 import stab1 from "../assets/images/stab1.png";
-import featureslid1 from "../assets/images/featureslid1.jpg";
+import machinery from "../assets/news/machinery-com.jpg";
 import abright from "../assets/images/abright.png";
 
 import { SiCodefresh } from "react-icons/si";
@@ -151,19 +151,21 @@ export default function Home() {
           <h3>WHO ARE OUR PARTNERS?</h3>
 
           <main className="sec1-cont">
-            <div className="right">
-              <img src={featureslid1} className="right-img" alt="" />
+            <div className="right" id="machinery-r">
+              <img src={machinery} className="machinery-img" alt="" />
             </div>
 
             <div className="left">
               <p>
-                We have established strong partnerships with various Chinese nationals, and 
+                Hon. Olu Fatoki in black suit with his business partner, Mr. Simon 
+                in Shanghai Materials Packaging Machinery Company, China.
+                {/* We have established strong partnerships with various Chinese nationals, and 
                 these collaborations play a vital role in keeping us at the forefront of soap 
                 production in Nigeria. By combining local expertise with international knowledge 
                 and technology, we are able to adopt dynamic production processes, improve 
                 efficiency, and continuously raise the standard of our products. This synergy 
                 allows us to innovate, remain competitive, and deliver high-quality soaps that 
-                meet the needs of our customers while aligning with global best practices.
+                meet the needs of our customers while aligning with global best practices. */}
               </p>
             </div>
           </main>

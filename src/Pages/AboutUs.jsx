@@ -90,6 +90,10 @@ export default function AboutUs() {
             <p>HON. JOHNSON OLU FATOKI</p>
           </motion.div>
         </section>
+
+        <section>
+          
+        </section>
       </motion.div>
       <Footer />
     </>
