@@ -18,6 +18,7 @@ import abright from "../assets/images/abright.png";
 import { SiCodefresh } from "react-icons/si";
 import { HiMiniSquaresPlus } from "react-icons/hi2";
 import { PiSealCheckFill } from "react-icons/pi";
+import TermsPrivacy from "../Components/TermsPrivacy";
 
 
 export default function Home() {
@@ -213,6 +214,7 @@ export default function Home() {
         </section>
 
       </motion.div>
+      <TermsPrivacy />
       <Footer />
     </>
   );
