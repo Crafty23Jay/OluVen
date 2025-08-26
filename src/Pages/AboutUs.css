@@ -106,6 +106,7 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: 0.5rem;
+  border-bottom: 4px solid rgb(5, 5, 150);
 }
 .aboutus-image-cont>h4, .aboutus-image-cont>p{
   margin: 0;
@@ -130,8 +131,131 @@
   transition: transform 0.3s ease;
 }
 
-.hon-img:hover {
+/* .hon-img:hover {
   transform: scale(1.03);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bg-slideshow {
+  /* position: relative; */
+  width: 100%;
+  height: 85%;
+  aspect-ratio: 5/10;
+  background-color: gray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: fadeSlide 40s ease-in-out infinite;
+  /* transition: 2.5s ease; */
+}
+
+/* Animation for fading between them */
+@keyframes fadeSlide {
+  0% { background-image: url(../assets/news/hon1a.jpg); }
+  15% { background-image: url(../assets/news/hon1b.jpg); }
+  30% { background-image: url(../assets/news/hon1b.jpg); }
+  600% { background-image: url(../assets/news/hon1c.jpg); }
+  80% { background-image: url(../assets/news/hon1d.jpg); }
+  100% { background-image: url(../assets/news/hon1d.jpg); }
+}
+
+
+
+
+.blog{
+  height: max-content;
+  width: 100vw;
+  background-color: rgb(5, 5, 150);
+  padding: 3.5rem 0;
+}
+.blog-cont{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 8px;
+  width: 95%;
+  margin: 0 auto;
+  /* margin-bottom: 3rem; */
+  /* border: 1px solid red; */
+  padding: 3rem 0;
+}
+.blog-img{
+  width: 90%;
+  height: 100%;
+  aspect-ratio: 16/10;
+  border-radius: 15px;
+  border-left: 4px solid #FEA500;
+  border-bottom: 4px solid #FEA500;
+  /* border-top: 4px solid white;
+  border-right: 4px solid white; */
+  object-fit: cover;
+  overflow: hidden;
+  background-position: 50% 50%;
+}
+.blog-img img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.blog-txt{
+  color: white;
+  font-family: monospace;
+  font-size: 1.65rem;
+  line-height: 2.11rem;
+  width: 80%;
+}
+
+
+
+.airport-cont{
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4rem 0;
+  gap: 0.4rem;
+}
+.airport{
+  width: 350px;
+  height: 500px;
+  aspect-ratio: 9/16;
+  margin: 0 auto;
+  overflow: hidden;
+  object-fit: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 5px solid rgb(5, 5, 150);
+  border-bottom: 5px solid rgb(5, 5, 150);
+  
+}
+.airport img{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.airport-cont p{
+  color: #797986;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 
@@ -170,5 +294,17 @@
   height: 28rem;
   aspect-ratio: 3/6;
   margin: auto;
+  }
+  .blog-txt{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+  }
+  .airport-sec{
+    gap: 10px;
+  }
+  .airport{
+  width: 310px;
+  height: 400px;
   }
 }

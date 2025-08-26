@@ -5,6 +5,9 @@ import Footer from "../Components/Footer";
 import "./AboutUs.css";
 import loaderGif from "../assets/loader.gif";
 import Hon_j from "../assets/images/hon_j.jpg";
+import ruima from "../assets/news/at-ruima.jpg"
+import trip from "../assets/news/biz-trip.jpg"
+import airport from "../assets/news/airport.jpg"
 
 export default function AboutUs() {
   const [loading, setLoading] = useState(true);
@@ -78,22 +81,48 @@ export default function AboutUs() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <div className="image-cont">
-              <img
+            <div className="image-cont" id="bg-slideshow">
+              {/* <img
               className="hon-img"
               src={Hon_j}
               alt="About Olu Ventures"
-              loading="lazy"
-            />
+              loading="lazy" 
+              /> */}
             </div>
             <h4>OWNER/MD, OLU VENTURES NIGERIA LIMITED</h4>
             <p>HON. JOHNSON OLU FATOKI</p>
           </motion.div>
         </section>
 
-        <section>
-          
+        <section className="blog">
+
+            <main className="blog-cont">
+              <div className="blog-img">
+                <img src={ruima} alt="" />
+              </div>
+              <div className="blog-txt">
+                <p>Hon. Olu Fatoki with the Managing Director, RUIMA Soap Machinery Company, 
+                  Mr. Yang, Changzhou, China.
+                </p>
+              </div>
+            </main>
+
+            <main className="blog-cont">
+              <div className="blog-txt">
+                <p>Business trip to Guangzhou Soap Machinery Company.</p>
+              </div>
+              <div className="blog-img">
+                <img src={trip} alt="" />
+              </div>
+            </main>
         </section>
+
+        <main className="airport-cont">
+          <div className="airport">
+            <img src={airport} alt="" />
+          </div>
+          <p className="blog-txt">At Shanghai Airport.</p>
+        </main>
       </motion.div>
       <Footer />
     </>
