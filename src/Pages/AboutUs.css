@@ -70,6 +70,9 @@
 
 .aboutus-overlay p {
   font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  width: 85%;
 }
 
 /* Content Section */
@@ -188,13 +191,13 @@
   margin: 0 auto;
   /* margin-bottom: 3rem; */
   /* border: 1px solid red; */
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .blog-img{
   width: 90%;
   height: 100%;
   aspect-ratio: 16/10;
-  border-radius: 15px;
+  border-radius: 8px;
   border-left: 4px solid #FEA500;
   border-bottom: 4px solid #FEA500;
   /* border-top: 4px solid white;
@@ -285,6 +288,9 @@
   .contact-overlay p {
     width: 85%;
   }
+  .blog-txt{
+    font-size: 1.3rem;
+  }
 }
 
 
@@ -296,7 +302,7 @@
   margin: auto;
   }
   .blog-txt{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     margin: auto;
   }

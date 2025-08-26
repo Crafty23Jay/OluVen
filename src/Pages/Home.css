@@ -68,6 +68,9 @@
 .hero-overlay p {
   font-size: 1.2rem;
   margin-bottom: 25px;
+  /* font-style: italic; */
+  line-height: 1.5rem;
+  width: 85%;
 }
 
 
