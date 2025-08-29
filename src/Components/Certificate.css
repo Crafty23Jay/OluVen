@@ -1,0 +1,87 @@
+.certificate-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.certificate-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: 600;
+}
+
+.certificate-section .intro-text {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.certificate-box {
+  max-width: 420px;
+  margin: 1rem auto;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+/* Image inside */
+.certificate-box img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.6s ease;
+  object-fit: cover;
+  object-position: top;
+  height: 180px; /* initially shows part of the image */
+}
+
+/* Dark overlay */
+.certificate-box .overlay {
+  position: absolute;
+  inset: 12px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  transition: opacity 0.4s ease;
+}
+
+/* Expanded state */
+.certificate-box.expanded img {
+  height: auto;          /* full height */
+  transform: scale(1);   /* reset any crop */
+}
+
+.certificate-box.expanded .overlay {
+  opacity: 0; /* remove darkness */
+}
+
+
+/* .certificate-box {
+  max-width: 420px;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.certificate-box img {
+  width: 100%;
+  border-radius: 8px;
+} */
+
+.certificate-section .certificate-details {
+  margin-top: 24px;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

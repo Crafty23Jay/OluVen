@@ -8,6 +8,8 @@ import Hon_j from "../assets/images/hon_j.jpg";
 import ruima from "../assets/news/at-ruima.jpg"
 import trip from "../assets/news/biz-trip.jpg"
 import airport from "../assets/news/airport.jpg"
+import Certificate from "../Components/Certificate";
+import ConclusionSection from "../Components/ConclusionSection";
 
 export default function AboutUs() {
   const [loading, setLoading] = useState(true);
@@ -94,6 +96,8 @@ export default function AboutUs() {
           </motion.div>
         </section>
 
+        <Certificate />
+
         <section className="blog">
 
             <main className="blog-cont">
@@ -124,6 +128,8 @@ export default function AboutUs() {
           <p className="blog-txt">At Shanghai Airport.</p>
         </main>
       </motion.div>
+
+      <ConclusionSection />
       <Footer />
     </>
   );
